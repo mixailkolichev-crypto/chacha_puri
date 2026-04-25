@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'motion/react';
 import MenuSection from './components/MenuSection';
 import Lightbox from './components/Lightbox';
+import logoUrl from './123456.PNG';
 
 import { MENU_DATA } from './constants';
 
@@ -18,8 +19,7 @@ export default function App() {
       {/* Sidebar - Desktop / Header - Mobile */}
       <aside className="md:w-80 lg:w-96 md:h-screen md:sticky md:top-0 md:sidebar-border bg-white p-8 md:p-12 lg:p-16 flex flex-col justify-between">
         <div className="logo-area mb-12 md:mb-0">
-          <h1 className="text-4xl lg:text-5xl font-serif font-normal tracking-tighter mb-2">ЧачаПури</h1>
-          <p className="text-sm italic font-serif text-brand-accent opacity-60">Грузинская кухня</p>
+          <img src={logoUrl} alt="ЧачаПури" className="w-full h-auto max-w-[200px]" referrerPolicy="no-referrer" />
         </div>
 
         <nav className="my-12 md:my-0 flex-1 overflow-y-auto py-8">
